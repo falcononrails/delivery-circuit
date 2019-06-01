@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical">
+
+    <!-- UI element declaration for "Get Directions" button -->
+
+    <fragment
+        android:id="@+id/mapfragment"
+        class="com.here.android.mpa.mapping.SupportMapFragment"
+        android:layout_width="421dp"
+        android:layout_height="551dp"
+        android:layout_margin="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_button"
+            android:onClick="nextStop"
+            android:src="@drawable/forward" />
+
+        <android.widget.Button
+            android:id="@+id/directionsbutton"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_button"
+            android:onClick="getDirections"
+            android:text="GO"
+            android:textColor="@color/common_action_bar_splitter" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_button"
+            android:onClick="previousStop"
+            android:src="@drawable/left" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

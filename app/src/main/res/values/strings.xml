@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Delivery Circuit</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Enregistrer</string>
+    <string name="label_button_getdirections">Optimize route</string>
+    <string name="textview_routecoordinates_2waypoints">Press "Get Directions" button to calculate a route:\nStart: Nokia, Burnaby\nEnd: Airport, YVR</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="create_button">Enregistrer</string>
+    <string name="route_name">Nom du chemin</string>
+</resources>

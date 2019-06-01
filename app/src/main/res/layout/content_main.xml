@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp">
+
+        <LinearLayout
+            android:id="@+id/list_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/name_text_input1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/start_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:drawableLeft="@drawable/ic_icon_flag"
+                    android:hint="Départ"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/name_text_input2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/end_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_icon_flag"
+                    android:hint="Arrivée"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="362dp"
+                android:layout_weight="5">
+
+                <Button
+                    android:id="@+id/add_stop"
+                    android:layout_width="191dp"
+                    android:layout_height="51dp"
+                    android:layout_below="@+id/listitem"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="310dp"
+                    android:layout_marginEnd="188dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/rounded_button"
+                    android:drawableLeft="@android:drawable/ic_menu_add"
+                    android:padding="5dp"
+                    android:text="Ajouter arrêt"
+                    android:textColor="#FFF" />
+
+                <ListView
+                    android:id="@+id/listitem"
+                    android:layout_width="match_parent"
+                    android:layout_height="262dp"
+                    android:layout_alignRight="@+id/add_stop"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="-231dp"
+                    android:layout_marginBottom="98dp" />
+
+
+                <Button
+                    android:id="@+id/add_field_button2"
+                    android:layout_width="193dp"
+                    android:layout_height="52dp"
+                    android:layout_below="@+id/listitem"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="309dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/rounded_button"
+                    android:drawableLeft="@android:drawable/ic_dialog_map"
+                    android:onClick="onGo"
+                    android:padding="5dp"
+                    android:text="Naviguer!"
+                    android:textColor="#FFF" />
+
+
+            </RelativeLayout>
+
+            <!-- FrameLayout for our fragments -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/text_view_name"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        tools:text="Gare de l'Oasis" />
+
+    <TextView
+        android:id="@+id/location_description"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textSize="@dimen/nav_header_vertical_spacing" />
+
+</LinearLayout>
